@@ -1,0 +1,935 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=light>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.png">
+  <link rel="icon" href="/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="author" content="Bloega">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="java从零到一1，java简介​		Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。由 James Gosling和同事们共同研发，并在 1995 年正式推出。 创始人——————————————————詹姆斯·高斯林————————————————————  java版本JavaSE（Java2 Pl">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java">
+<meta property="og:url" content="https://bloega.netlify.app/2022/09/12/java/index.html">
+<meta property="og:site_name" content="Bloegaの小破站">
+<meta property="og:description" content="java从零到一1，java简介​		Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。由 James Gosling和同事们共同研发，并在 1995 年正式推出。 创始人——————————————————詹姆斯·高斯林————————————————————  java版本JavaSE（Java2 Pl">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tse2-mm.cn.bing.net/th/id/OIP-C.RIsPOdCtPGIXoHdIcjn0OwAAAA?pid=ImgDet&rs=1">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5Hf5n.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5Hrgf.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5HgbQ.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5HBCt.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5Hsv8.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5Hw4I.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5HD8P.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5H6KS.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5HcDg.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5HvP1.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/12/vX5UW4.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5HI2V.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5HREj.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5HWUs.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5H4Cq.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5HovT.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5H580.png">
+<meta property="og:image" content="https://s1.ax1x.com/2022/09/01/v5Hbb4.png">
+<meta property="article:published_time" content="2022-09-12T12:03:32.000Z">
+<meta property="article:modified_time" content="2023-01-08T00:55:58.000Z">
+<meta property="article:author" content="Bloega">
+<meta property="article:tag" content="编程">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="JAVA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tse2-mm.cn.bing.net/th/id/OIP-C.RIsPOdCtPGIXoHdIcjn0OwAAAA?pid=ImgDet&rs=1">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+     <!-- 一言 --> <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script> 
+  
+  <title>java - Bloegaの小破站</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/scrollAnimation.css">
+<link rel="stylesheet" href="/css/cloudedGlass.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/scroll.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"bloega.netlify.app","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"|","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#ffb7c5","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Bloega‘s Blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/comments/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>留言板</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('https://img.qovv.cn/2024/04/10/661687d00c264.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="java"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-09-12 20:03" pubdate>
+          星期一, 九月 12日 2022, 8:03 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          <!-- compatible with older versions-->
+          1k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          <!-- compatible with older versions-->
+          9 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">java</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="java从零到一"><a href="#java从零到一" class="headerlink" title="java从零到一"></a>java从零到一</h1><h3 id="1，java简介"><a href="#1，java简介" class="headerlink" title="1，java简介"></a>1，java简介</h3><p>​		Java 是由 Sun Microsystems 公司于 1995 年 5 月推出的 Java 面向对象程序设计语言和 Java 平台的总称。由 James Gosling和同事们共同研发，并在 1995 年正式推出。</p>
+<h5 id="创始人"><a href="#创始人" class="headerlink" title="创始人"></a>创始人</h5><p>——————————————————詹姆斯·高斯林————————————————————</p>
+<p><img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.RIsPOdCtPGIXoHdIcjn0OwAAAA?pid=ImgDet&rs=1" srcset="/img/loading.gif" lazyload></p>
+<h6 id="java版本"><a href="#java版本" class="headerlink" title="java版本"></a>java版本</h6><p>JavaSE（Java2 Platform Standard Edition，java标准版）</p>
+<p>JavaEE （Java 2 Platform,Enterprise Edition，java企业版）</p>
+<p>JavaME  （Java 2 Platform Micro Edition，java微型版）</p>
+<h6 id="JDK"><a href="#JDK" class="headerlink" title="JDK"></a>JDK</h6><p>sun公司于1996年推出了第一款java版本jdk 1.0（Java Development Kit 1.0，2009年sun公司被Oracle（甲骨文收购）随之被推行下去</p>
+<h3 id="2-配置Java环境（Windows）"><a href="#2-配置Java环境（Windows）" class="headerlink" title="2,配置Java环境（Windows）"></a>2,配置Java环境（Windows）</h3><h4 id="下载Java"><a href="#下载Java" class="headerlink" title="下载Java"></a>下载Java</h4><p>我们可以到<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads/">Java Downloads | Oracle</a>下载</p>
+<p>如图所示</p>
+<p><img src="https://s1.ax1x.com/2022/09/01/v5Hf5n.png" srcset="/img/loading.gif" lazyload alt="image-20220815222545055"></p>
+<p>下拉到这里下载对应的版本</p>
+<p><img src="https://s1.ax1x.com/2022/09/01/v5Hrgf.png" srcset="/img/loading.gif" lazyload alt="image-20220815222702813"></p>
+<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4><p>下载好后解压到文件目录</p>
+<p>解压完成后搜索“环境变量”</p>
+<img src="https://s1.ax1x.com/2022/09/01/v5HgbQ.png" srcset="/img/loading.gif" lazyload alt="image-20220815223036032" style="zoom:50%;" />
+
+<p>打开后点击环境变量</p>
+<img src="https://s1.ax1x.com/2022/09/01/v5HBCt.png" srcset="/img/loading.gif" lazyload alt="image-20220815223132776" style="zoom:50%;" />
+
+<p>点击新建</p>
+<p>变量名如图所示</p>
+<p><img src="https://s1.ax1x.com/2022/09/01/v5Hsv8.png" srcset="/img/loading.gif" lazyload alt="image-20220815223722040"></p>
+<p>变量值为你刚才解压好的文件目录</p>
+<p>编辑完后点击确定</p>
+<p>然后找到path</p>
+<p><img src="https://s1.ax1x.com/2022/09/01/v5Hw4I.png" srcset="/img/loading.gif" lazyload alt="image-20220815223722040"></p>
+<p>点击后点击新建</p>
+<p><img src="https://s1.ax1x.com/2022/09/01/v5HD8P.png" srcset="/img/loading.gif" lazyload alt="image-20220815223316344"></p>
+<p>这里呢输入%JAVA_HOME%\bin完成后确定</p>
+<h4 id="检测是否配置完成"><a href="#检测是否配置完成" class="headerlink" title="检测是否配置完成"></a>检测是否配置完成</h4><p>win（徽标键）+ R输入cmd</p>
+<img src="https://s1.ax1x.com/2022/09/01/v5H6KS.png" srcset="/img/loading.gif" lazyload alt="image-20220815224047721" style="zoom:50%;" />
+
+<p>输入java -version</p>
+<p>输出如下</p>
+<img src="https://s1.ax1x.com/2022/09/01/v5HcDg.png" srcset="/img/loading.gif" lazyload alt="image-20220815224249364" style="zoom: 67%;" />
+
+<h3 id="3-我的第一个Java程序"><a href="#3-我的第一个Java程序" class="headerlink" title="3.我的第一个Java程序"></a>3.我的第一个Java程序</h3><p>在桌面上新建一个文本文档名称为HelloWorld</p>
+<p>打开后输入</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">HelloWorld</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;HELLO!!World!!&quot;</span>);<br>    &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure>
+
+<p><strong>切记</strong>！程序内符号一律为英文符号如果含有中文符号将会报错</p>
+<p>后缀名改为.java</p>
+<p>完成后打开cmd</p>
+<p>转到桌面</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-built_in">cd</span> Desktop<br></code></pre></td></tr></table></figure>
+
+<p>先编译</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">javac HelloWorld.java<br></code></pre></td></tr></table></figure>
+
+<p>然后运行</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><span class="hljs-keyword">java </span>HelloWorld.<span class="hljs-keyword">java</span><br></code></pre></td></tr></table></figure>
+
+<p>输出</p>
+<figure class="highlight erlang-repl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs erlang-repl">HELLO!!World!!<br></code></pre></td></tr></table></figure>
+
+<h3 id="4-java编辑器的选择"><a href="#4-java编辑器的选择" class="headerlink" title="4.java编辑器的选择"></a>4.java编辑器的选择</h3><p>在编写java程序时通常我们面对的只是白色的窗口，即没有代码高亮，也没有代码补全。可谓是非常难受</p>
+<p>所以这边给大家推荐一个javaIDE（集成开发环境）</p>
+<p>在推荐之前先要弄清楚IDE（集成开发环境）与 文本编辑器的区别</p>
+<h5 id="1-IDE"><a href="#1-IDE" class="headerlink" title="1.IDE"></a>1.IDE</h5><p>IDE（集成开发环境） 顾名思义，就是集成在一起的工具，涵盖了程序得编辑，运行，构建，Debug等</p>
+<p>通常仅限于一种编程语言，包括编辑器，编译器，IDE几乎涵盖了文本编辑器的所有功能，功能也相对完</p>
+<p>全</p>
+<h5 id="2-文本编辑器"><a href="#2-文本编辑器" class="headerlink" title="2.文本编辑器"></a>2.文本编辑器</h5><p>通常情况下，我们与IDE的相处时间较长，但有时我们只需要用来编辑代码的工具——代码编辑器。代码编辑器与典型的 IDE 不同，你可以把它用于自己喜欢的任何一种编码语言或框架，通常功能单一</p>
+<h5 id="IDE与文本编辑器推荐"><a href="#IDE与文本编辑器推荐" class="headerlink" title="IDE与文本编辑器推荐"></a>IDE与文本编辑器推荐</h5><h6 id="1-IDE-1"><a href="#1-IDE-1" class="headerlink" title="1.IDE"></a>1.IDE</h6><p>1.Jetbrains全家桶</p>
+<p>官网：<a target="_blank" rel="noopener" href="https://www.jetbrains.com/">https://www.jetbrains.com/</a></p>
+ <img src="https://s1.ax1x.com/2022/09/01/v5HvP1.png" srcset="/img/loading.gif" lazyload alt="屏幕截图 2022-08-16 091941" style="zoom:150%;" />
+
+<p>打开后我们可以看到有很多的IDE供我们选择（如Webstom（Web），IDEA（Java），Clion（C&amp;C++）等）</p>
+<h6 id="2-宇宙第一IDE——Visual-Studio"><a href="#2-宇宙第一IDE——Visual-Studio" class="headerlink" title="2.宇宙第一IDE——Visual Studio"></a>2.宇宙第一IDE——Visual Studio</h6><p>官网：<a target="_blank" rel="noopener" href="https://visualstudio.microsoft.com/zh-hans/">Visual Studio: 面向软件开发人员和 Teams 的 IDE 和代码编辑器 (microsoft.com)</a></p>
+<p><img src="https://s1.ax1x.com/2022/09/12/vX5UW4.png" srcset="/img/loading.gif" lazyload alt="屏幕截图 2022-08-16 094403"></p>
+<p>为什么说他是宇宙第一IDE呢，因为他对英语不太熟练的猿们非常友好，它的不仅界面是中文，而且错误提示竟然是中文的这对英语差的猿们可谓是福音了</p>
+<p>优点说完了那缺点也是很鸡肋最大的缺点就是没有自动保存，作者可是被这个坑惨了&#96;o(╥﹏╥)o，还有呢就是此IDE对磁盘占用极大，对性能较差的电脑十分不友好</p>
+<h6 id="3-SublimeText"><a href="#3-SublimeText" class="headerlink" title="3.SublimeText"></a>3.SublimeText</h6><p>官网：<a target="_blank" rel="noopener" href="https://www.sublimetext.com/">Sublime Text - Text Editing, Done Right</a></p>
+<p><img src="https://s1.ax1x.com/2022/09/01/v5HI2V.png" srcset="/img/loading.gif" lazyload alt="image-20220816095336030"></p>
+<p>相对于Viual Studio，此IDE性对轻量而且支持的语言超级多，几乎囊括了市面上所有的编程语言缺点就是编译十分麻烦需要依次选择Tools—&gt;Build—&gt;New Build System然后指定编译器</p>
+<hr>
+<p>JavaIDE的选择————Jetbrains Intellij IDEA</p>
+<h3 id="5-创建一个Java项目"><a href="#5-创建一个Java项目" class="headerlink" title="5.创建一个Java项目"></a>5.创建一个Java项目</h3><p>打开IDEA</p>
+<p><img src="https://s1.ax1x.com/2022/09/01/v5HREj.png" srcset="/img/loading.gif" lazyload alt="image-20220816102905249"></p>
+<p>点击New Project</p>
+<img src="https://s1.ax1x.com/2022/09/01/v5HWUs.png" srcset="/img/loading.gif" lazyload alt="image-20220816111731135" style="zoom: 80%;" />
+
+<p>注意这里选择的是Empty Project</p>
+<p>点击Finsh</p>
+<p>创建完后依次点击File——&gt;New——&gt;Moubles</p>
+<img src="https://s1.ax1x.com/2022/09/01/v5H4Cq.png" srcset="/img/loading.gif" lazyload alt="image-20220816112043616" style="zoom:67%;" />
+
+<p>然后点击Java</p>
+<img src="https://s1.ax1x.com/2022/09/01/v5HovT.png" srcset="/img/loading.gif" lazyload alt="image-20220816112154057" style="zoom:67%;" />
+
+<p>点击Next</p>
+<p><img src="https://s1.ax1x.com/2022/09/01/v5H580.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>随后点击Finsh创建完成</p>
+<p>然后右键包下得src文件夹，新建一个java类</p>
+<p><img src="https://s1.ax1x.com/2022/09/01/v5Hbb4.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<p>第一次可能需要索引，请耐心等待</p>
+<p>索引完成后创建项目基本完成</p>
+<h3 id="6-java文件结构"><a href="#6-java文件结构" class="headerlink" title="6.java文件结构"></a>6.java文件结构</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> class 类名 &#123;<br>    main方法(主函数)<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>      	  执行语句<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E7%BC%96%E7%A8%8B/" class="category-chain-item">编程</a>
+  
+  
+
+      </span>
+    
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%95%99%E7%A8%8B/" class="category-chain-item">教程</a>
+  
+  
+
+      </span>
+    
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Java/" class="category-chain-item">Java</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E7%BC%96%E7%A8%8B/" class="print-no-link">#编程</a>
+      
+        <a href="/tags/%E6%95%99%E7%A8%8B/" class="print-no-link">#教程</a>
+      
+        <a href="/tags/JAVA/" class="print-no-link">#JAVA</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>java</div>
+      <div>https://bloega.netlify.app/2022/09/12/java/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Bloega</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2022年9月12日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/10/07/Windows-Terminal%E7%BE%8E%E5%8C%96/" title="Windows_Terminal美化">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Windows_Terminal美化</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="SOHUCS" sid='https://bloega.netlify.app/2022/09/12/java/'></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#SOHUCS', function() {
+      Fluid.utils.createScript("https://changyan.sohu.com/upload/changyan.js", function() {
+        window.changyan.api.config({"appid":"cyxh3hnjA","appkey":"fbd31322fa25e2ee7c11a96c41faf8e2"})
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+  
+  
+
+
+
+
+
+  <script>
+  Fluid.utils.createScript('https://lib.baomitu.com/mermaid/8.14.0/mermaid.min.js', function() {
+    mermaid.initialize({"theme":"default"});
+
+    Fluid.utils.listenDOMLoaded(function() {
+      Fluid.events.registerRefreshCallback(function() {
+        if ('mermaid' in window) {
+          mermaid.init();
+        }
+      });
+    });
+  });
+</script>
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <div> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              load: ['ui/lazy']
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  
+<script src="/js/scrollAnimation.js"></script>
+<script src="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/Cherry.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/EmoryHuang/BlogBeautify@1.1/runtime.min.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script><!-- hexo injector body_end end --></body>
+</html>

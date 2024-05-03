@@ -429,20 +429,20 @@ sup > a::before,
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-@supports (-webkit-backdrop-filter: blur(3px)) or (backdrop-filter: blur(3px)) {
+@supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px)) {
   .navbar .dropdown-collapse,
   .top-nav-collapse,
   .navbar-col-show {
-    background: rgba(47,65,84,0.7);
-    -webkit-backdrop-filter: blur(3px);
-    backdrop-filter: blur(3px);
+    background: rgba(255,255,255,0.7);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
   }
 }
-@supports not ((-webkit-backdrop-filter: blur(3px)) or (backdrop-filter: blur(3px))) {
+@supports not ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
   .navbar .dropdown-collapse,
   .top-nav-collapse,
   .navbar-col-show {
-    background: #2f4154;
+    background: #fff;
   }
 }
 @media (max-width: 767px) {
@@ -574,10 +574,10 @@ sup > a::before,
 }
 #nprogress .bar {
   height: 3px !important;
-  background-color: #29d !important;
+  background-color: #ffb7c5 !important;
 }
 #nprogress .peg {
-  box-shadow: 0 0 14px #29d, 0 0 8px #29d !important;
+  box-shadow: 0 0 14px #ffb7c5, 0 0 8px #ffb7c5 !important;
 }
 @media (max-width: 575px) {
   #nprogress .bar {
@@ -782,7 +782,7 @@ html {
 html,
 body {
   height: 100%;
-  font-family: var(--font-family-sans-serif);
+  font-family: 微软雅黑;
   overflow-wrap: break-word;
 }
 body {
@@ -847,16 +847,16 @@ i.iconfont {
   --color-mode: "light";
   --body-bg-color: #eee;
   --board-bg-color: #fff;
-  --text-color: #3c4858;
-  --sec-text-color: #718096;
+  --text-color: #ffb7c5;
+  --sec-text-color: #2c3e50;
   --post-text-color: #2c3e50;
   --post-heading-color: #1a202c;
   --post-link-color: #0366d6;
   --link-hover-color: #30a9de;
   --link-hover-bg-color: #f8f9fa;
   --line-color: #eaecef;
-  --navbar-bg-color: #2f4154;
-  --navbar-text-color: #fff;
+  --navbar-bg-color: #FFFFFF;
+  --navbar-text-color: #ffffff;
   --subtitle-color: #fff;
   --scrollbar-color: #c4c6c9;
   --scrollbar-hover-color: #a6a6a6;
@@ -864,7 +864,7 @@ i.iconfont {
   --button-hover-bg-color: #f2f3f5;
   --highlight-bg-color: #f6f8fa;
   --inlinecode-bg-color: rgba(175,184,193,0.2);
-  --fold-title-color: #3c4858;
+  --fold-title-color: #ffb7c5;
   --fold-border-color: #eaecef;
 }
 @media (prefers-color-scheme: dark) {
@@ -873,16 +873,16 @@ i.iconfont {
   }
   :root:not([data-user-color-scheme]) {
     --body-bg-color: #181c27;
-    --board-bg-color: #252d38;
+    --board-bg-color: #333333;
     --text-color: #c4c6c9;
     --sec-text-color: #a7a9ad;
     --post-text-color: #c4c6c9;
     --post-heading-color: #c4c6c9;
     --post-link-color: #1589e9;
     --link-hover-color: #30a9de;
-    --link-hover-bg-color: #364151;
-    --line-color: #435266;
-    --navbar-bg-color: #1f3144;
+    --link-hover-bg-color: #ffb7c5;
+    --line-color: #ffb7c5;
+    --navbar-bg-color: #333333;
     --navbar-text-color: #d0d0d0;
     --subtitle-color: #d0d0d0;
     --scrollbar-color: #687582;
@@ -892,27 +892,27 @@ i.iconfont {
     --highlight-bg-color: #303030;
     --inlinecode-bg-color: rgba(99,110,123,0.4);
     --fold-title-color: #c4c6c9;
-    --fold-border-color: #435266;
+    --fold-border-color: #ffb7c5;
   }
   :root:not([data-user-color-scheme]) img {
     -webkit-filter: brightness(0.9);
     filter: brightness(0.9);
     transition: filter 0.2s ease-in-out;
   }
-  @supports (-webkit-backdrop-filter: blur(3px)) or (backdrop-filter: blur(3px)) {
+  @supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px)) {
     :root:not([data-user-color-scheme]) .navbar .dropdown-collapse,
     :root:not([data-user-color-scheme]) .top-nav-collapse,
     :root:not([data-user-color-scheme]) .navbar-col-show {
-      background: rgba(31,49,68,0.7);
-      -webkit-backdrop-filter: blur(3px);
-      backdrop-filter: blur(3px);
+      background: rgba(51,51,51,0.7);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
     }
   }
-  @supports not ((-webkit-backdrop-filter: blur(3px)) or (backdrop-filter: blur(3px))) {
+  @supports not ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
     :root:not([data-user-color-scheme]) .navbar .dropdown-collapse,
     :root:not([data-user-color-scheme]) .top-nav-collapse,
     :root:not([data-user-color-scheme]) .navbar-col-show {
-      background: #1f3144;
+      background: #333;
     }
   }
   :root:not([data-user-color-scheme]) .license-box {
@@ -927,16 +927,16 @@ i.iconfont {
 @media not print {
   [data-user-color-scheme="dark"] {
     --body-bg-color: #181c27;
-    --board-bg-color: #252d38;
+    --board-bg-color: #333333;
     --text-color: #c4c6c9;
     --sec-text-color: #a7a9ad;
     --post-text-color: #c4c6c9;
     --post-heading-color: #c4c6c9;
     --post-link-color: #1589e9;
     --link-hover-color: #30a9de;
-    --link-hover-bg-color: #364151;
-    --line-color: #435266;
-    --navbar-bg-color: #1f3144;
+    --link-hover-bg-color: #ffb7c5;
+    --line-color: #ffb7c5;
+    --navbar-bg-color: #333333;
     --navbar-text-color: #d0d0d0;
     --subtitle-color: #d0d0d0;
     --scrollbar-color: #687582;
@@ -946,27 +946,27 @@ i.iconfont {
     --highlight-bg-color: #303030;
     --inlinecode-bg-color: rgba(99,110,123,0.4);
     --fold-title-color: #c4c6c9;
-    --fold-border-color: #435266;
+    --fold-border-color: #ffb7c5;
   }
   [data-user-color-scheme="dark"] img {
     -webkit-filter: brightness(0.9);
     filter: brightness(0.9);
     transition: filter 0.2s ease-in-out;
   }
-  @supports (-webkit-backdrop-filter: blur(3px)) or (backdrop-filter: blur(3px)) {
+  @supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px)) {
     [data-user-color-scheme="dark"] .navbar .dropdown-collapse,
     [data-user-color-scheme="dark"] .top-nav-collapse,
     [data-user-color-scheme="dark"] .navbar-col-show {
-      background: rgba(31,49,68,0.7);
-      -webkit-backdrop-filter: blur(3px);
-      backdrop-filter: blur(3px);
+      background: rgba(51,51,51,0.7);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
     }
   }
-  @supports not ((-webkit-backdrop-filter: blur(3px)) or (backdrop-filter: blur(3px))) {
+  @supports not ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
     [data-user-color-scheme="dark"] .navbar .dropdown-collapse,
     [data-user-color-scheme="dark"] .top-nav-collapse,
     [data-user-color-scheme="dark"] .navbar-col-show {
-      background: #1f3144;
+      background: #333;
     }
   }
   [data-user-color-scheme="dark"] .license-box {
@@ -1435,7 +1435,7 @@ figure.highlight td.code > pre {
 .markdown-body {
   font-size: 1rem;
   line-height: 1.6;
-  font-family: var(--font-family-sans-serif);
+  font-family: 微软雅黑;
   margin-bottom: 2rem;
   color: var(--post-text-color);
 }
