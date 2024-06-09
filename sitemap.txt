@@ -1,4 +1,5 @@
 https://bloega.netlify.app/2024/06/09/Image-Enl%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/
+https://bloega.netlify.app/2024/06/09/%E3%80%90NOIP%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%E3%80%91%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/
 https://bloega.netlify.app/2022/10/07/Windows-Terminal%E7%BE%8E%E5%8C%96/
 https://bloega.netlify.app/2022/09/12/java/
 https://bloega.netlify.app/bangumi/index.html
@@ -15,9 +16,12 @@ https://bloega.netlify.app/tags/Python/
 https://bloega.netlify.app/tags/%E7%BE%8E%E5%8C%96/
 https://bloega.netlify.app/tags/powershell/
 https://bloega.netlify.app/tags/JAVA/
+https://bloega.netlify.app/tags/NOIP/
+https://bloega.netlify.app/tags/C/
 https://bloega.netlify.app/categories/%E7%BC%96%E7%A8%8B/
 https://bloega.netlify.app/categories/Windows/
 https://bloega.netlify.app/categories/%E6%95%99%E7%A8%8B/
 https://bloega.netlify.app/categories/Java/
+https://bloega.netlify.app/categories/NOIP/
 https://bloega.netlify.app/categories/%E5%9B%BE%E7%89%87/
 https://bloega.netlify.app/categories/Python/

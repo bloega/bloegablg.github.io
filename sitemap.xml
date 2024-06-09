@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://bloega.netlify.app/2024/06/09/%E3%80%90NOIP%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0%E3%80%91%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/</loc>
+    
+    <lastmod>2024-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bloega.netlify.app/2022/10/07/Windows-Terminal%E7%BE%8E%E5%8C%96/</loc>
     
     <lastmod>2024-05-03</lastmod>
@@ -140,6 +149,20 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://bloega.netlify.app/tags/NOIP/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bloega.netlify.app/tags/C/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -165,6 +188,13 @@
   
   <url>
     <loc>https://bloega.netlify.app/categories/Java/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bloega.netlify.app/categories/NOIP/</loc>
     <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
