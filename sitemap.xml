@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://bloega.netlify.app/2024/06/09/Image-Enl%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/</loc>
+    
+    <lastmod>2024-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://bloega.netlify.app/2022/10/07/Windows-Terminal%E7%BE%8E%E5%8C%96/</loc>
     
     <lastmod>2024-05-03</lastmod>
@@ -76,43 +85,57 @@
 
   <url>
     <loc>https://bloega.netlify.app/</loc>
-    <lastmod>2024-05-03</lastmod>
+    <lastmod>2024-06-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://bloega.netlify.app/tags/%E7%BE%8E%E5%8C%96/</loc>
-    <lastmod>2024-05-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://bloega.netlify.app/tags/powershell/</loc>
-    <lastmod>2024-05-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://bloega.netlify.app/tags/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2024-05-03</lastmod>
+    <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bloega.netlify.app/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-05-03</lastmod>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bloega.netlify.app/tags/%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bloega.netlify.app/tags/Python/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bloega.netlify.app/tags/%E7%BE%8E%E5%8C%96/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bloega.netlify.app/tags/powershell/</loc>
+    <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bloega.netlify.app/tags/JAVA/</loc>
-    <lastmod>2024-05-03</lastmod>
+    <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -120,29 +143,43 @@
 
   
   <url>
-    <loc>https://bloega.netlify.app/categories/Windows/</loc>
-    <lastmod>2024-05-03</lastmod>
+    <loc>https://bloega.netlify.app/categories/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://bloega.netlify.app/categories/%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2024-05-03</lastmod>
+    <loc>https://bloega.netlify.app/categories/Windows/</loc>
+    <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bloega.netlify.app/categories/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2024-05-03</lastmod>
+    <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://bloega.netlify.app/categories/Java/</loc>
-    <lastmod>2024-05-03</lastmod>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bloega.netlify.app/categories/%E5%9B%BE%E7%89%87/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://bloega.netlify.app/categories/Python/</loc>
+    <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

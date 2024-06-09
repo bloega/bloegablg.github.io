@@ -4,6 +4,43 @@
   
   
   <entry>
+    <title>Image Enl使用文档</title>
+    <link href="/2024/06/09/Image-Enl%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/"/>
+    <url>/2024/06/09/Image-Enl%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Image-Enl使用文档"><a href="#Image-Enl使用文档" class="headerlink" title="Image Enl使用文档"></a>Image Enl使用文档</h1><p>Image Enl是一款基于深度学习算法，对图片进行无损放大的图片处理工具</p><h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>对于当下人们对于图片清晰度的需求，无论人们从网络还是相册中的图片，都会面对图片不清晰或者放大后失真（图像失真指数码图像与真实拍摄环境的差异）的情况，即便网络上已有一些工具来解决此问题，但都有着收费，效果不明显，国内无法访问等问题，所以，ImageEnl应实势而生</p><p><img src="https://img.picui.cn/free/2024/06/09/66657c89c7bf9.png" alt="9196208e-2e1e-403b-aa8e-2408a9019cf3"></p><h2 id="如何工作"><a href="#如何工作" class="headerlink" title="如何工作"></a>如何工作</h2><h3 id="技术栈："><a href="#技术栈：" class="headerlink" title="技术栈："></a>技术栈：</h3><ol><li><h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3></li><li><h3 id="Numpy"><a href="#Numpy" class="headerlink" title="Numpy"></a>Numpy</h3></li><li><h3 id="Pillow"><a href="#Pillow" class="headerlink" title="Pillow"></a>Pillow</h3></li><li><h3 id="Shutil"><a href="#Shutil" class="headerlink" title="Shutil"></a>Shutil</h3></li></ol><p>使用Pillow打开图片，打开后经算法将图片放大后写入到模板文件（tmp.png）然后将图片写入到程序自动创建的图片中，达到图片变清晰的效果</p><h3 id="运行效果"><a href="#运行效果" class="headerlink" title="运行效果"></a>运行效果</h3><p><img src="/image-20240510165148317.png" alt="image-20240510165148317"></p><p>本用户界面使用tkiner进行设计，并且进行了美化，使其更加适合现代人群</p><table><thead><tr><th align="center">按钮名称</th><th>解释</th></tr></thead><tbody><tr><td align="center">选择图片</td><td>选择要放大的图片路径（注：文件路径中不能有中文）</td></tr><tr><td align="center">选择保存路径</td><td>选择要保存文件的路径（注：文件路径中不能有中文）</td></tr><tr><td align="center">选择放大倍数</td><td>选择放大倍数（2x为2倍，4x为4倍…）</td></tr><tr><td align="center">开始放大</td><td>开始对图片进行放大（放大速度与电脑性能有关）</td></tr></tbody></table><p>选择图片后，图片会在界面底部的画框中显示类似于这样</p><p><img src="/image-20240510170715792.png" alt="image-20240510170715792"></p><p>放大后会打开图片</p><p>放大效果如下：</p><p><img src="/image-20240510171036676.png" alt="image-20240510171036676"></p><p>可见，原来4k的图片放大后变成10k文件大小也由64kb变为了701kb</p><h3 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h3><ol><li>使用Numpy对文件OI（文件打开与输入）操作进行加速，尽量压缩到10分钟以内</li><li>UI设计更加贴合现代化人群</li><li>采用离线操作，不依赖任何网络文件</li><li>纯Python编写且采用多种Python modules使代码简洁，易懂</li></ol><h3 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h3><ol><li>由于运行在本地，只能使用本地资源进行放大操作无法使用cuda（显卡加速）</li><li>只能放大png文件（技术有限）</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>编程</category>
+      
+      <category>教程</category>
+      
+      <category>图片</category>
+      
+      <category>Python</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>编程</tag>
+      
+      <tag>教程</tag>
+      
+      <tag>图片处理</tag>
+      
+      <tag>Python</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Windows_Terminal美化</title>
     <link href="/2022/10/07/Windows-Terminal%E7%BE%8E%E5%8C%96/"/>
     <url>/2022/10/07/Windows-Terminal%E7%BE%8E%E5%8C%96/</url>
